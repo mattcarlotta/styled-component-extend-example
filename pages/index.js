@@ -1,5 +1,7 @@
 import Button1 from "../components/Button1";
 import Button2 from "../components/Button2";
+import Button3 from "../components/Button3";
+import Button4 from "../components/Button4";
 
 export default function Home() {
   return (
@@ -9,6 +11,14 @@ export default function Home() {
       </Button1>
       <br />
       <Button2>Button2</Button2>
+      <br />
+      <Button3 complex white>
+        Button3
+      </Button3>
+      <br />
+      <Button4 complex teal>
+        Button4
+      </Button4>
     </>
   );
 }
