@@ -8,13 +8,14 @@ const Article = styled.article`
 const Container = styled.section`
   width: 200px;
   padding: 24px;
-  border: 1px solid #4fadff;
+  border: 1px solid blue;
 `;
 
 const Content = styled.p`
-  background: #4fadff;
+  background: blue;
   color: white;
-  padding: 10;
+  padding: 10px;
+  text-align: center;
 `;
 
 const Post = nest(Article, Container, Content);

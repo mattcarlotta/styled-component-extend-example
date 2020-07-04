@@ -24,7 +24,7 @@ export default function Home() {
       <br />
       <ComposedExample />
       <br />
-      <NestedExample>Hi! I'm a nested example!</NestedExample>
+      <NestedExample>I'm a nested example!</NestedExample>
     </>
   );
 }
