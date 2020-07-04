@@ -23,3 +23,10 @@ const wrapDisplayName = (BaseComponent, hocName) =>
   `${hocName}(${getDisplayName(BaseComponent)})`;
 
 export { getDisplayName, setDisplayName, wrapDisplayName };
+
+const displayName = {};
+displayName.getDisplayName = getDisplayName;
+displayName.setDisplayName = setDisplayName;
+displayName.wrapDisplayName = wrapDisplayName;
+
+export default displayName;

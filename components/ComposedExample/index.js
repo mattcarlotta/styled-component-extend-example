@@ -1,7 +1,10 @@
 import Base from "../Base";
-import { compose, withProps } from "../../utils";
+import { compose, displayName, withProps } from "../../utils";
+
+const { setDisplayName } = displayName;
 
 const StyledA = compose(
+  setDisplayName("Styled A"),
   withProps((props) => ({
     ...props,
     css: `
@@ -16,6 +19,7 @@ const StyledA = compose(
 )(Base);
 
 const StyledB = compose(
+  setDisplayName("Styled B"),
   withProps((props) => ({
     ...props,
     css: `
