@@ -33,12 +33,8 @@ const StyledB = compose(
   `)
 )(Base);
 
-const RestyledA = compose(
-  setDisplayName("Recomposed Restyled A"),
-  withProps((props) => ({
-    ...props,
-    onClick: () => alert("bye"),
-  })),
+const RecomposedA = compose(
+  setDisplayName("Recomposed A"),
   withStyles(`
     color: green;
     border-color: green;
@@ -49,7 +45,7 @@ const ComposedExample = () => (
   <>
     <StyledA>Hi</StyledA>
     <br />
-    <RestyledA>Hi</RestyledA>
+    <RecomposedA>Hi</RecomposedA>
     <br />
     <StyledB>Bye</StyledB>
   </>
